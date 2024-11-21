@@ -1,0 +1,821 @@
+{
+    "SchemaVersion": 1,
+    "ModName": "Enemy Stats",
+    "Tabs": [
+        {
+            "TabId": "general_settings",
+            "TabName": "General",
+            "Sections": [
+                {
+                    "SectionId": "general_settings_section",
+                    "SectionName": "General Settings",
+                    "Settings": [
+                        {
+                            "Id": "Enemies",
+                            "Name": "Enemies",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable or disable Enemy boosts.",
+                            "Handles": {
+                                "DescriptionHandle": "h690b4442b6094080a70f55a2cb3cbed13g04",
+                                "NameHandle": "hced0211b6a994b42b8c4341c589f07c58gccs"
+                            }
+                        },
+                        {
+                            "Id": "LevelScalingMult",
+                            "Name": "Level Scaling Multiplier",
+                            "Type": "slider_float",
+                            "Default": 0.0,
+                            "Description": "Non-boss enemies will scale at X times your level. Set to 0 to disable level scaling.",
+                            "Handles": {
+                                "DescriptionHandle": "h8c643ffd33da40d5beeb2b5fb0ececea1c77",
+                                "NameHandle": "h9d077d93c0284d02a29c47396e493e6311e7"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 10.0
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "Enemies",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "Allies",
+                            "Name": "Allies",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Scales Allies to enemy level and gives them the same HP bonuses as Enemies.\nDoes not apply to companions or Origin characters.",
+                            "Handles": {
+                                "DescriptionHandle": "h400f24bb0b2b4cdeb041664fee0641fbag11",
+                                "NameHandle": "h79b7b1f6bf5f48d7aabde0decd161961ecdd"
+                            }
+                        },
+                        {
+                            "Id": "Bosses",
+                            "Name": "Bosses",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Enable or disable Boss boosts.",
+                            "Handles": {
+                                "DescriptionHandle": "ha7f76a3b90dc4b38a3968e9ad07ad282632g",
+                                "NameHandle": "hcdef043b84c947a09fc56a948fde062873c4s"
+                            }
+                        },
+                        {
+                            "Id": "BossScaling",
+                            "Name": "Boss Level Scaling",
+                            "Type": "slider_float",
+                            "Default": 2.0,
+                            "Description": "Scales bosses to X times your level. Set 0 to disable boss scaling.",
+                            "Handles": {
+                                "DescriptionHandle": "h70cce6a93cb24630a21af06cf1e9479d3411",
+                                "NameHandle": "h3477796866f24be38cce9d7e72923a47e28f"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 10.0
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "Bosses",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "BossesHPMult",
+                            "Name": "Boss HP Multiplier",
+                            "Type": "slider_float",
+                            "Default": 1.0,
+                            "Description": "Multiplies Total HP Bonus by this value for Bosses.",
+                            "Handles": {
+                                "DescriptionHandle": "hae7c389ec72d45a1a9d7b586fb3acfbae1eg",
+                                "NameHandle": "h36fcd177585b4ea29d99b3c619a36cda4g1e"
+                            },
+                            "Options": {
+                                "Min": 1.0,
+                                "Max": 20.0
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "Bosses",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "BossesDamageMult",
+                            "Name": "Boss Damage Multiplier",
+                            "Type": "slider_float",
+                            "Default": 1.0,
+                            "Description": "Multiplies Damage Bonus by this value for Bosses.",
+                            "Handles": {
+                                "DescriptionHandle": "h13c22f9e16c24a46b8feaacfd8da5686bc74",
+                                "NameHandle": "h1448e50024f14618a188d4baecf394944200"
+                            },
+                            "Options": {
+                                "Min": 1.0,
+                                "Max": 20.0
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "Bosses",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "BossesACMult",
+                            "Name": "Boss AC Multiplier",
+                            "Type": "slider_float",
+                            "Default": 1.0,
+                            "Description": "Multiplies AC Bonus by this value for Bosses.",
+                            "Handles": {
+                                "DescriptionHandle": "h11b05ea705204b5f9a7b05f8ea7fee812d90",
+                                "NameHandle": "h6faf9bfdc131432e95f5840f0e92b7171ebe"
+                            },
+                            "Options": {
+                                "Min": 1.0,
+                                "Max": 20.0
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "Bosses",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "TabId": "hp_settings",
+            "TabName": "HP",
+            "Sections": [
+                {
+                    "SectionId": "hp_settings_section",
+                    "SectionName": "HP Settings",
+                    "Settings": [
+                        {
+                            "Id": "MaxHealthPercentage",
+                            "Name": "Static Max Health Percentage Boost",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Description": "Percentage increase for max health.",
+                            "Handles": {
+                                "DescriptionHandle": "he34b10e9cc11415c94bbda4d74645dd7a1f0",
+                                "NameHandle": "h72e87ba87362494493b0d6156cfb423c5942"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 10000
+                            }
+                        },
+                        {
+                            "Id": "StaticHealthBoost",
+                            "Name": "Static Health Boost",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Description": "Static boost for health.",
+                            "Handles": {
+                                "DescriptionHandle": "hbe69fe54a83545bcb9b3e5edb1f07f05g292",
+                                "NameHandle": "hf35c848e4b41403b8f95741eb1a703f887ff"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 2000
+                            }
+                        },
+                        {
+                            "Id": "HealthScalingPercentage",
+                            "Name": "Health Scaling Percentage",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Description": "Percentage increase for health scaling.",
+                            "Handles": {
+                                "DescriptionHandle": "he32925cc66544e75b409c1f53d4c8e1e9faa",
+                                "NameHandle": "h33c9458b41744835ac68b6480f380a065895"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 1000
+                            }
+                        },
+                        {
+                            "Id": "StaticScalingHealthBoost",
+                            "Name": "Static Scaling Health Boost",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Description": "Static boost for scaling health.",
+                            "Handles": {
+                                "DescriptionHandle": "h633c763c656b4b07ab0f56e363c9a83fe6f0",
+                                "NameHandle": "hb03479087d1549e0af63c80a9e17da718e0a"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 1000
+                            }
+                        },                        {
+                            "Id": "LevelIncrementforHP",
+                            "Name": "Level Increment for HP",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Description": "Number of levels between HP boosts.",
+                            "Handles": {
+                                "DescriptionHandle": "hb052be3368d84e4ba69f74e3559f04b12711",
+                                "NameHandle": "h159c6843b92845db8f04a3fba635d05efed8"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 20
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "TabId": "attribute_settings",
+            "TabName": "Attributes",
+            "Sections": [
+                {
+                    "SectionId": "attribute_settings_section",
+                    "SectionName": "Static Boosts (Do not scale with level)",
+                    "Settings": [
+                        {
+                            "Id": "ActionPointBoosts",
+                            "Name": "Action Points",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Boosts for Action Points.",
+                            "Handles": {
+                                "DescriptionHandle": "h0447dd12c70b4b74b223a015c1401e85f9ab",
+                                "NameHandle": "h99500f0915bc473e940533cc805af14e2bce"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 5
+                            }
+                        },
+                        {
+                            "Id": "BonusActionPointBoosts",
+                            "Name": "Bonus Action Points",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Boosts for Bonus Action Points.",
+                            "Handles": {
+                                "DescriptionHandle": "heba52904188f4ee5aac88ea473a0dbaf33e3",
+                                "NameHandle": "h0989e864d5654cec9c59313a88c2b0ddce05"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 5
+                            }
+                        },
+                        {
+                            "Id": "StaticDamageBoost",
+                            "Name": "Damage",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Static boost for damage.",
+                            "Handles": {
+                                "DescriptionHandle": "h2ba28455a2bf4172a808696fac95b2ccd1c4",
+                                "NameHandle": "h02368004ed2b44e5afd6c33d1dea3e9c387a"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "StaticACBoost",
+                            "Name": "AC",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Static boost for AC.",
+                            "Handles": {
+                                "DescriptionHandle": "h0c3337b1b23f4482b369e34a2c908f73757c",
+                                "NameHandle": "h8a7bea89dc2040ecb79ddb7221b754ec5fg7"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 40
+                            }
+                        },
+                        {
+                            "Id": "StaticMovementBoost",
+                            "Name": "Movement",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Static boost for movement.",
+                            "Handles": {
+                                "DescriptionHandle": "ha69a42fbcf584d08ad536cbd18843be252e2",
+                                "NameHandle": "hdbca8507243944219ccf834d43890445fd52"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "RollBonusBoosts",
+                            "Name": "Roll Bonus",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Boosts for Roll Bonus.",
+                            "Handles": {
+                                "DescriptionHandle": "h857c9ebc9d0b48eb96ca482f58b93f704a45",
+                                "NameHandle": "h7b0497351ba7466298499adee38064d5g715"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 40
+                            }
+                        },
+                        {
+                            "Id": "SpellSaveDCBoosts",
+                            "Name": "Spell Save DC Bonus",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Boosts for Spell Save DC.",
+                            "Handles": {
+                                "DescriptionHandle": "h857c9ebc9d0b48eb96ca482f58b93f704a45",
+                                "NameHandle": "h7dd9fe987b9646b99725e53dcfcd4f85001g"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 40
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "TabId": "ability_settings",
+            "TabName": "Abilities",
+            "Sections": [
+                {
+                    "SectionId": "ability_settings_section",
+                    "SectionName": "Static Boosts (Do not scale with level)",
+                    "Settings": [
+                        {
+                            "Id": "StaticStrengthBoost",
+                            "Name": "Strength",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Static boost for Strength.",
+                            "Handles": {
+                                "DescriptionHandle": "hd123d2bfc20d4efd9d65f6c437493914e684",
+                                "NameHandle": "h3783197108a8428cac7af26fbd85fac7da6b"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "StaticDexterityBoost",
+                            "Name": "Dexterity",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Static boost for Dexterity.",
+                            "Handles": {
+                                "DescriptionHandle": "h246a73d2edb24de2b6ac6b60f18dcd3f48d6",
+                                "NameHandle": "hb3da74c8663f44dcb6ea1f6babc5b93f2eg4"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "StaticConstitutionBoost",
+                            "Name": "Constitution",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Static boost for Constitution.",
+                            "Handles": {
+                                "DescriptionHandle": "hcb6d42509759464eae4bb6b62bdd418d4ff8",
+                                "NameHandle": "h66039172424a476ea99ad80a97086fdd1g29"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "StaticIntelligenceBoost",
+                            "Name": "Intelligence",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Static boost for Intelligence.",
+                            "Handles": {
+                                "DescriptionHandle": "hc3f6909d7bdd48688ee1748293f2711d53f1",
+                                "NameHandle": "h3d87599af9604a8c82e03c4489711ed35bcd"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "StaticWisdomBoost",
+                            "Name": "Wisdom",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Static boost for Wisdom.",
+                            "Handles": {
+                                "DescriptionHandle": "h44bf76b31d9b495587151e625e5ade4c8682",
+                                "NameHandle": "h76ecc3ee80144d23b110a08c244d03f2g4fb"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "StaticCharismaBoost",
+                            "Name": "Charisma",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Static boost for Charisma.",
+                            "Handles": {
+                                "DescriptionHandle": "h1f2d2d28e3494e80aef7a719b83b53a7f5e9",
+                                "NameHandle": "h511e1ac42c2041beaada04a40e8a6bb677f4"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "TabId": "level_increment_settings",
+            "TabName": "Scaling",
+            "Sections": [
+                {
+                    "SectionId": "level_increment_settings_section",
+                    "SectionName": "Scaling Boosts",
+                    "Settings": [
+                        {
+                            "Id": "ConstitutionLevelIncrement",
+                            "Name": "Scaling Constitution",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Level increment for Constitution scaling.",
+                            "Handles": {
+                                "DescriptionHandle": "hb11d8b282b9c44bab53503f39bee945eeg6d",
+                                "NameHandle": "hb7f86a27c23e4469b3cad83c8e60e00b309f"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "DexterityLevelIncrement",
+                            "Name": "Scaling Dexterity",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Level increment for Dexterity scaling.",
+                            "Handles": {
+                                "DescriptionHandle": "h247c9797cf6143099cb09e6f1fca77c9g399",
+                                "NameHandle": "he9208f3f0e18410688a6c2edb01be3905347"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "StrengthLevelIncrement",
+                            "Name": "Scaling Strength",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Level increment for Strength scaling.",
+                            "Handles": {
+                                "DescriptionHandle": "hee47fb38091a42ffaa70ccb45eda5b7ddc7c",
+                                "NameHandle": "hd8462a5d2254416c9597edf4bfeffa08f019"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "IntelligenceLevelIncrement",
+                            "Name": "Scaling Intelligence",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Level increment for Intelligence scaling.",
+                            "Handles": {
+                                "DescriptionHandle": "h8130ed9ba95642099a72a1510cd67adef8e6",
+                                "NameHandle": "hf6029d23dadf413b879e66a35bd3420f7c16"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "WisdomLevelIncrement",
+                            "Name": "Scaling Wisdom",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Level increment for Wisdom scaling.",
+                            "Handles": {
+                                "DescriptionHandle": "h5b3037c8194d4a1a8f989c22792880df10a3",
+                                "NameHandle": "h3cd232899e684e69bee7e52951bf2493746a"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "CharismaLevelIncrement",
+                            "Name": "Scaling Charisma",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Level increment for Charisma scaling.",
+                            "Handles": {
+                                "DescriptionHandle": "h134e369b52dd4a2087ee7a2b2e0bde2b2g0f",
+                                "NameHandle": "h2dce914c6b854f0eb3049d047aea3544g1b0"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "ACLevelIncrement",
+                            "Name": "Scaling AC",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Level increment for AC scaling.",
+                            "Handles": {
+                                "DescriptionHandle": "h583461df5e274a3b859e1f7c86cfcefda99d",
+                                "NameHandle": "h6ea2ee85619c47b18b31018150900796c963"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "RollBonusLevelIncrement",
+                            "Name": "Scaling Roll Bonus",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Level increment for Roll Bonus scaling.",
+                            "Handles": {
+                                "DescriptionHandle": "hfd111e7736284d3f96572309f878ff157eg1",
+                                "NameHandle": "hea314fdeae5f494bbac0e454d966a6e02c2g"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "MovementLevelIncrement",
+                            "Name": "Scaling Movement",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Level increment for Movement scaling.",
+                            "Handles": {
+                                "DescriptionHandle": "h15b2a68e5c374cbe841f978b96fcff15e2g0",
+                                "NameHandle": "h674fc2ae130941e0abda9bc4bcf0d668416e"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "DamageLevelIncrement",
+                            "Name": "Scaling Damage",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Level increment for Damage scaling.",
+                            "Handles": {
+                                "DescriptionHandle": "hb88b5c3ada0d430d87d404939e8702878a9c",
+                                "NameHandle": "h1071a01fc2e949308f254fb614d40bd2c5cd"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "SpellSaveDCLevelIncrement",
+                            "Name": "Scaling Spell Save DC",
+                            "Type": "slider_int",
+                            "Default": 0,
+                            "Tooltip": "Level increment for Spell Save DC.",
+                            "Handles": {
+                                "DescriptionHandle": "hb88b5c3ada0d430d87d404939e8702878a9c",
+                                "NameHandle": "h41c0e0f968614704bec36dd6f27e8493c628"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "TabId": "level_scaling",
+            "TabName": "Level Increment",
+            "Sections": [
+                {"SectionId": "level_scaling_settings",
+                    "SectionName": "Level Scaling Settings (How many levels per boost)",
+                    "Settings": [
+                        {
+                            "Id": "LevelIncrementforDexterity",
+                            "Name": "Level Increment for Dexterity",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Tooltip": "Level increment for Dexterity scaling.",
+                            "Handles": {
+                                "NameHandle": "hd8f2dbee499649a1b32bd6acba0a0b834084"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "LevelIncrementforStrength",
+                            "Name": "Level Increment for Strength",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Tooltip": "Level increment for Strength scaling.",
+                            "Handles": {
+                                "NameHandle": "h2b98c0b77c9d4d6890eff6201f39fe075590"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "LevelIncrementforConstitution",
+                            "Name": "Level Increment for Constitution",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Tooltip": "Level increment for Constitution scaling.",
+                            "Handles": {
+                                "NameHandle": "h8b518c6a8ee4419c9a9641673fb35c11361d"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "LevelIncrementforIntelligence",
+                            "Name": "Level Increment for Intelligence",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Tooltip": "Level increment for Intelligence scaling.",
+                            "Handles": {
+                                "NameHandle": "h8694638f587b4848898781937694c8cf9e5f"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "LevelIncrementforCharisma",
+                            "Name": "Level Increment for Charisma",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Tooltip": "Level increment for Charisma scaling.",
+                            "Handles": {
+                                "NameHandle": "h9700f5cce7e749b3985c9d9a92dbde2baca0"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "LevelIncrementforWisdom",
+                            "Name": "Level Increment for Wisdom",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Tooltip": "Level increment for Wisdom scaling.",
+                            "Handles": {
+                                "NameHandle": "hd55b866f3c4d417f9c30663cd8c618ac94fe"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "LevelIncrementforRollBonus",
+                            "Name": "Level Increment for Roll Bonus",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Tooltip": "Level increment for Roll Bonus scaling.",
+                            "Handles": {
+                                "NameHandle": "h78e5786394934b73914021a8119a131cfc94"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "LevelIncrementforDamage",
+                            "Name": "Level Increment for Damage",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Tooltip": "Level increment for Damage scaling.",
+                            "Handles": {
+                                "NameHandle": "h1c496bdbd7094a3a9b8db1b0eab6c84e44df"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "LevelIncrementforAC",
+                            "Name": "Level Increment for AC",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Tooltip": "Level increment for AC scaling.",
+                            "Handles": {
+                                "NameHandle": "he0790311102646e78780e3aad3a13becef0f"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "LevelIncrementforMovement",
+                            "Name": "Level Increment for Movement",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Tooltip": "Level increment for Movement scaling.",
+                            "Handles": {
+                                "NameHandle": "h423510b3b51848709aea145e2cbd25e5be69"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        },
+                        {
+                            "Id": "LevelIncrementforSpellSaveDC",
+                            "Name": "Level Increment for Spell Save DC",
+                            "Type": "slider_int",
+                            "Default": 1,
+                            "Tooltip": "Level increment for Spell Save DC.",
+                            "Handles": {
+                                "NameHandle": "h824fb9f3d3a54239bec15e1fa6373c83e2g8"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+                    

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<content contentuid="h8c643ffd33da40d5beeb2b5fb0ececea1c77" version="1">Non-boss enemies will scale at X times your level. Set to 0 to disable level scaling.</content>
+	<content contentuid="h690b4442b6094080a70f55a2cb3cbed13g04" version="1">Enable or disable Enemy boosts.</content>
+	<content contentuid="ha7f76a3b90dc4b38a3968e9ad07ad282632g" version="1">Enable or disable Boss boosts.</content>
+	<content contentuid="hae7c389ec72d45a1a9d7b586fb3acfbae1eg" version="1">Multiplies Total HP Bonus by this value for Bosses.</content>
+	<content contentuid="h13c22f9e16c24a46b8feaacfd8da5686bc74" version="1">Multiplies Damage Bonus by this value for Bosses.</content>
+	<content contentuid="h11b05ea705204b5f9a7b05f8ea7fee812d90" version="1">Multiplies AC Bonus by this value for Bosses.</content>
+	<content contentuid="he32925cc66544e75b409c1f53d4c8e1e9faa" version="1">Percentage increase for health scaling.</content>
+	<content contentuid="hb052be3368d84e4ba69f74e3559f04b12711" version="1">Number of levels between HP boosts.</content>
+	<content contentuid="he34b10e9cc11415c94bbda4d74645dd7a1f0" version="1">Percentage increase for max health.</content>
+	<content contentuid="h633c763c656b4b07ab0f56e363c9a83fe6f0" version="1">Static boost for scaling health.</content>
+	<content contentuid="hbe69fe54a83545bcb9b3e5edb1f07f05g292" version="1">Static boost for health.</content>
+	<content contentuid="h0447dd12c70b4b74b223a015c1401e85f9ab" version="1">Boosts for Action Points.</content>
+	<content contentuid="heba52904188f4ee5aac88ea473a0dbaf33e3" version="1">Boosts for Bonus Action Points.</content>
+	<content contentuid="h4576e127fc9341098f283e2c16093475b3fb" version="1">Boosts for Rage.</content>
+	<content contentuid="ha2dccbbeae8742de8dbf91ac99fe558ebf52" version="1">Boosts for Sorcery Points.</content>
+	<content contentuid="ha1a5f7aadf4d48c6bd26f74104a32ac7g1c3" version="1">Boosts for Superiority Dice.</content>
+	<content contentuid="h10439edfbaa44abe8a8d1317e950ff267b64" version="1">Boosts for Wild Shape.</content>
+	<content contentuid="he09b920a625c4828bfbd7a07a4285ea741d7" version="1">Boosts for Lay On Hands.</content>
+	<content contentuid="ha1f4d859171344d5a7ce20e4d76e5e89a5f9" version="1">Boosts for Channel Oath.</content>
+	<content contentuid="h153a0c57fe1e4f84a7c1ca658a7a8723c176" version="1">Boosts for Channel Divinity.</content>
+	<content contentuid="hd84e10ee33a84a608015eaf84118752accb8" version="1">Boosts for Ki Points.</content>
+	<content contentuid="h2ba28455a2bf4172a808696fac95b2ccd1c4" version="1">Static boost for damage.</content>
+	<content contentuid="h0c3337b1b23f4482b369e34a2c908f73757c" version="1">Static boost for AC.</content>
+	<content contentuid="ha69a42fbcf584d08ad536cbd18843be252e2" version="1">Static boost for movement.</content>
+	<content contentuid="h857c9ebc9d0b48eb96ca482f58b93f704a45" version="1">Boosts for Roll Bonus.</content>
+	<content contentuid="hd123d2bfc20d4efd9d65f6c437493914e684" version="1">Static boost for Strength.</content>
+	<content contentuid="h246a73d2edb24de2b6ac6b60f18dcd3f48d6" version="1">Static boost for Dexterity.</content>
+	<content contentuid="hcb6d42509759464eae4bb6b62bdd418d4ff8" version="1">Static boost for Constitution.</content>
+	<content contentuid="hc3f6909d7bdd48688ee1748293f2711d53f1" version="1">Static boost for Intelligence.</content>
+	<content contentuid="h44bf76b31d9b495587151e625e5ade4c8682" version="1">Static boost for Wisdom.</content>
+	<content contentuid="h1f2d2d28e3494e80aef7a719b83b53a7f5e9" version="1">Static boost for Charisma.</content>
+	<content contentuid="hb11d8b282b9c44bab53503f39bee945eeg6d" version="1">Level increment for Constitution scaling.</content>
+	<content contentuid="h247c9797cf6143099cb09e6f1fca77c9g399" version="1">Level increment for Dexterity scaling.</content>
+	<content contentuid="hee47fb38091a42ffaa70ccb45eda5b7ddc7c" version="1">Level increment for Strength scaling.</content>
+	<content contentuid="h8130ed9ba95642099a72a1510cd67adef8e6" version="1">Level increment for Intelligence scaling.</content>
+	<content contentuid="h5b3037c8194d4a1a8f989c22792880df10a3" version="1">Level increment for Wisdom scaling.</content>
+	<content contentuid="h134e369b52dd4a2087ee7a2b2e0bde2b2g0f" version="1">Level increment for Charisma scaling.</content>
+	<content contentuid="h583461df5e274a3b859e1f7c86cfcefda99d" version="1">Level increment for AC scaling.</content>
+	<content contentuid="hfd111e7736284d3f96572309f878ff157eg1" version="1">Level increment for Roll Bonus scaling.</content>
+	<content contentuid="h15b2a68e5c374cbe841f978b96fcff15e2g0" version="1">Level increment for Movement scaling.</content>
+	<content contentuid="hb88b5c3ada0d430d87d404939e8702878a9c" version="1">Level increment for Damage scaling.</content>
+	<content contentuid="h2727e978bc7f404e98a58907e5c7f16f4f53" version="1">Level increment for Dexterity scaling.</content>
+	<content contentuid="h629a11da28f44f269f96d03e57f7744a6253" version="1">Level increment for Strength scaling.</content>
+	<content contentuid="h2bf08e76d9c44838b98a5989cccda905361d" version="1">Level increment for Constitution scaling.</content>
+	<content contentuid="h3698653b16de46dab8f161b196a3d61ab5gg" version="1">Level increment for Intelligence scaling.</content>
+	<content contentuid="heb6533d684484d928ca2f981045e2f652000" version="1">Level increment for Charisma scaling.</content>
+	<content contentuid="h6f28657289414c39a8d0234321ab9b0b21gd" version="1">Level increment for Wisdom scaling.</content>
+	<content contentuid="h2848fdd7d4194d6d8cf2bf413e1b9a9ef430" version="1">Level increment for Roll Bonus scaling.</content>
+	<content contentuid="hd5e31f645e4d4c5e807dcd180e2f4525d482" version="1">Level increment for Damage scaling.</content>
+	<content contentuid="h11358a632f2d4282918c4075aea5acdc09g8" version="1">Level increment for AC scaling.</content>
+	<content contentuid="h8bf246f6e5514eba9b421e5833fb253c0g30" version="1">Level increment for Movement scaling.</content>
+	<content contentuid="hced0211b6a994b42b8c4341c589f07c58gcc" version="1">Enemie</content>
+	<content contentuid="h9d077d93c0284d02a29c47396e493e6311e7" version="1">Level Scaling Multiplier</content>
+	<content contentuid="h20a95b045b694697b929672dfc0c02c2e44a" version="1">Level Scalin</content>
+	<content contentuid="hcdef043b84c947a09fc56a948fde062873c4" version="1">Bosses</content>
+	<content contentuid="h36fcd177585b4ea29d99b3c619a36cda4g1e" version="1">Boss HP Multiplier</content>
+	<content contentuid="h1448e50024f14618a188d4baecf394944200" version="1">Boss Damage Multiplier</content>
+	<content contentuid="h6faf9bfdc131432e95f5840f0e92b7171ebe" version="1">Boss AC Multiplier</content>
+	<content contentuid="h33c9458b41744835ac68b6480f380a065895" version="1">Health Scaling Percentage</content>
+	<content contentuid="h159c6843b92845db8f04a3fba635d05efed8" version="1">Level Increment for HP</content>
+	<content contentuid="h72e87ba87362494493b0d6156cfb423c5942" version="1">Static Max Health Percentage Boost</content>
+	<content contentuid="hb03479087d1549e0af63c80a9e17da718e0a" version="1">Static Scaling Health Boost</content>
+	<content contentuid="hf35c848e4b41403b8f95741eb1a703f887ff" version="1">Static Health Boost</content>
+	<content contentuid="h99500f0915bc473e940533cc805af14e2bce" version="1">Action Points</content>
+	<content contentuid="h0989e864d5654cec9c59313a88c2b0ddce05" version="1">Bonus Action Points</content>
+	<content contentuid="h542b3b79eaf245e09e133431c2c18aaafc1f" version="1">Rage</content>
+	<content contentuid="h56842c034e3946e693562b966ef0a2737680" version="1">Sorcery Points</content>
+	<content contentuid="h22f53eb7277f4ed0b9cf2cbbc8da73f0a4gd" version="1">Superiority Dice</content>
+	<content contentuid="h797b366fa9f24eb2a636686e7dd847d4c3c7" version="1">Wild Shape</content>
+	<content contentuid="h86a0d088cbee471287287cbd7ca3854cf67b" version="1">Lay On Hands</content>
+	<content contentuid="h7035e7dde02d4c048c344c528ca8303b9ecd" version="1">Channel Oath</content>
+	<content contentuid="h5a2c9c1a4f9643a19ac34fbf1017641d930b" version="1">Channel Divinity</content>
+	<content contentuid="hfe791ea797a24516b1d196cc10350ba2b226" version="1">Ki Points</content>
+	<content contentuid="h02368004ed2b44e5afd6c33d1dea3e9c387a" version="1">Damage</content>
+	<content contentuid="h8a7bea89dc2040ecb79ddb7221b754ec5fg7" version="1">AC</content>
+	<content contentuid="hdbca8507243944219ccf834d43890445fd52" version="1">Movement</content>
+	<content contentuid="h7b0497351ba7466298499adee38064d5g715" version="1">Roll Bonus</content>
+	<content contentuid="h3783197108a8428cac7af26fbd85fac7da6b" version="1">Strength</content>
+	<content contentuid="hb3da74c8663f44dcb6ea1f6babc5b93f2eg4" version="1">Dexterity</content>
+	<content contentuid="h66039172424a476ea99ad80a97086fdd1g29" version="1">Constitution</content>
+	<content contentuid="h3d87599af9604a8c82e03c4489711ed35bcd" version="1">Intelligence</content>
+	<content contentuid="h76ecc3ee80144d23b110a08c244d03f2g4fb" version="1">Wisdom</content>
+	<content contentuid="h511e1ac42c2041beaada04a40e8a6bb677f4" version="1">Charisma</content>
+	<content contentuid="hb7f86a27c23e4469b3cad83c8e60e00b309f" version="1">Scaling Constitution</content>
+	<content contentuid="he9208f3f0e18410688a6c2edb01be3905347" version="1">Scaling Dexterity</content>
+	<content contentuid="hd8462a5d2254416c9597edf4bfeffa08f019" version="1">Scaling Strength</content>
+	<content contentuid="hf6029d23dadf413b879e66a35bd3420f7c16" version="1">Scaling Intelligence</content>
+	<content contentuid="h3cd232899e684e69bee7e52951bf2493746a" version="1">Scaling Wisdom</content>
+	<content contentuid="h2dce914c6b854f0eb3049d047aea3544g1b0" version="1">Scaling Charisma</content>
+	<content contentuid="h6ea2ee85619c47b18b31018150900796c963" version="1">Scaling AC</content>
+	<content contentuid="hea314fdeae5f494bbac0e454d966a6e02c2g" version="1">Scaling Roll Bonus</content>
+	<content contentuid="h674fc2ae130941e0abda9bc4bcf0d668416e" version="1">Scaling Movement</content>
+	<content contentuid="h1071a01fc2e949308f254fb614d40bd2c5cd" version="1">Scaling Damage</content>
+	<content contentuid="hd8f2dbee499649a1b32bd6acba0a0b834084" version="1">Level Increment for Dexterity</content>
+	<content contentuid="h2b98c0b77c9d4d6890eff6201f39fe075590" version="1">Level Increment for Strength</content>
+	<content contentuid="h8b518c6a8ee4419c9a9641673fb35c11361d" version="1">Level Increment for Constitution</content>
+	<content contentuid="h8694638f587b4848898781937694c8cf9e5f" version="1">Level Increment for Intelligence</content>
+	<content contentuid="h9700f5cce7e749b3985c9d9a92dbde2baca0" version="1">Level Increment for Charisma</content>
+	<content contentuid="hd55b866f3c4d417f9c30663cd8c618ac94fe" version="1">Level Increment for Wisdom</content>
+	<content contentuid="h78e5786394934b73914021a8119a131cfc94" version="1">Level Increment for Roll Bonus</content>
+	<content contentuid="h1c496bdbd7094a3a9b8db1b0eab6c84e44df" version="1">Level Increment for Damage</content>
+	<content contentuid="he0790311102646e78780e3aad3a13becef0f" version="1">Level Increment for AC</content>
+	<content contentuid="h423510b3b51848709aea145e2cbd25e5be69" version="1">Level Increment for Movement</content>
+	<content contentuid="h79b7b1f6bf5f48d7aabde0decd161961ecdd" version="1">Allies</content>
+	<content contentuid="h400f24bb0b2b4cdeb041664fee0641fbag11" version="1">Scales Allies to enemy level and gives them the same HP bonuses as Enemies.&lt;br&gt;Does not apply to companions or Origin characters.</content>
+	<content contentuid="h584203ff8a1847709ab5129d537567d1ef15" version="1">Enhanced</content>
+	<content contentuid="h70cce6a93cb24630a21af06cf1e9479d3411" version="1">Scales bosses to X times your level. Set 0 to disable boss scaling.</content>
+	<content contentuid="h3477796866f24be38cce9d7e72923a47e28f" version="1">Boss Level Scaling</content>
+	<content contentuid="h824fb9f3d3a54239bec15e1fa6373c83e2g8" version="1">Level Increment for Spell Save DC</content>
+	<content contentuid="h41c0e0f968614704bec36dd6f27e8493c628" version="1">Scaling Spell Save DC</content>
+	<content contentuid="h7dd9fe987b9646b99725e53dcfcd4f85001g" version="1">Spell Save DC Bonus</content>
+</contentList>
